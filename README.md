@@ -13,16 +13,8 @@ checkpoints, predictions, figures or other results. Each script writes its own o
 ## Data
 
 All datasets used in the paper are available on Zenodo at
-[10.5281/zenodo.21033759](https://doi.org/10.5281/zenodo.21033759); download each benchmark's
+[10.5281/zenodo.21036347](https://doi.org/10.5281/zenodo.21036347); download each benchmark's
 `*.npy` file and place it in the corresponding benchmark folder.
-
-Alternatively, the datasets can be regenerated from scratch with each benchmark's `gen_*.py` script
-(e.g. `python obstacle/gen_obstacle.py`); the channel benchmark rasterises the public
-Neural-Topology-Optimization (NTO) CFD dataset via `channel/C1/gen_channel_train.py`. Regenerating
-the tumour data (`tumour_merge/gen_tumour_merge.py`) and the Stefan FBNO calibration
-(`stefan/calibrate_from_fbno.py`) additionally requires the published FBNO dataset (Long et al.,
-Zenodo [10.5281/zenodo.15779011](https://doi.org/10.5281/zenodo.15779011)) in a sibling `FBNO/`
-folder; the self-contained `tumour_merge/gen_tumour_merge_disks_v1.py` needs no external data.
 
 ## Environment
 
@@ -46,8 +38,8 @@ A CUDA-enabled PyTorch build is recommended for training; the scripts fall back 
 ## Running
 
 Generate or download the data, train the forward operator (`C1/`), then optionally run the
-inverse design (`C2_inverse/`). Per-benchmark and per-scenario `README.md` files give the exact
-commands; for the obstacle problem, for example:
+inverse design (`C2_inverse/`). Per-scenario `README.md` files (in each `C1/` and `C2_inverse/`)
+give the exact commands; for the obstacle problem, for example:
 
     python obstacle/gen_obstacle.py                   # data        -> obstacle/obstacle.npy
     python obstacle/C1/train_c1_obstacle.py           # forward op  -> obstacle/C1/results/
