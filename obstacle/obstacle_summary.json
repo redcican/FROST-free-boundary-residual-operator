@@ -1,0 +1,10 @@
+{
+  "n_samples": 80,
+  "grid": 128,
+  "steady": true,
+  "contact_component_counts": {
+    "1": 21,
+    "2": 59
+  },
+  "attempts": 80
+}

@@ -1,0 +1,15 @@
+name: frost
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pytorch>=2.0          # install the matching pytorch-cuda build for GPU training
+  - numpy
+  - scipy
+  - matplotlib
+  - scikit-image
+  - shapely
+  - pandas
+  - pip

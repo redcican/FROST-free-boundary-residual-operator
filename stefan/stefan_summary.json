@@ -1,0 +1,33 @@
+{
+  "n_samples": 80,
+  "grid": 128,
+  "frames": 15,
+  "steady": false,
+  "topology": "N->1 grain coalescence",
+  "seed_count_distribution": {
+    "2": 26,
+    "3": 22,
+    "4": 32
+  },
+  "attempts": 80,
+  "calibration": {
+    "source": "FBNO/data/stefan_data/stefan_data.npy (300 x 1D Stefan)",
+    "St_range": [
+      0.69,
+      1.6
+    ],
+    "gap_range": [
+      0.24,
+      0.3700977087020876
+    ],
+    "St_realized": [
+      0.7010123133659363,
+      1.57632577419281
+    ],
+    "front_travel_realized": [
+      0.12147078663110733,
+      0.18386681377887726
+    ],
+    "fbno_excursion_max": 0.2551216781139374
+  }
+}

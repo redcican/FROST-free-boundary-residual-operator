@@ -1,0 +1,31 @@
+{
+  "source": "FBNO/data/stefan_data/stefan_data.npy (300 x 1D Stefan)",
+  "n_fbno": 300,
+  "alpha_norm_fourier": 0.019871999999999997,
+  "front_excursion_fwd": {
+    "p10": 0.014003870742661606,
+    "p50": 0.08234440428870066,
+    "p90": 0.1850488543510438,
+    "max": 0.2551216781139374
+  },
+  "front_speed_norm": {
+    "p5": -0.2757928133010864,
+    "p50": 0.0585307478904723,
+    "p95": 0.45826119482517175
+  },
+  "stefan_number": {
+    "median": 0.18064842379927798,
+    "p75": 0.6890605836903011,
+    "p95": 1.7290916059341808,
+    "lambda_median": 0.2920675496758131
+  },
+  "gen_gap_range": [
+    0.24,
+    0.3700977087020876
+  ],
+  "gen_St_range": [
+    0.69,
+    1.6
+  ],
+  "note": "1D fields are NOT used as 2D samples; we match the dimensionless forward-excursion and normalized-speed envelope. Absolute Fourier number differs (different time normalizations); the per-run dimensionless front behaviour is what is matched."
+}

@@ -1,0 +1,17 @@
+# Generated outputs and data are not part of this source package.
+results/
+__pycache__/
+*.pyc
+
+# datasets (regenerate with each benchmark's gen_*.py)
+*.npy
+*.npz
+
+# trained checkpoints and run logs
+*.pt
+*.ckpt
+*.log
+
+# generated figures / previews
+*.png
+*.pdf
